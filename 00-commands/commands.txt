@@ -1,0 +1,27 @@
+cd
+cd..
+Mkdir foldername
+Rmdir foldername
+
+type nul > filename.c  -> creates new c file
+del filename.c
+
+Dir - shows all directory
+
+Gcc filename.c               -> directly gives a.exe
+gcc -E hello.c > hello.i   -> preprocessor
+gcc -S hello.i > hello.s   -> compiler
+gcc -C hello.s > hello.o  -> assembler
+                                      -> linker
+Ls - list
+move hello.c foldername
+move hello.c /foldername
+
+Git clone (link of github https://github.com/mrunali0204/c-programming)
+rename  largest_no 06-largest-no -> rename old folder name to new
+
+git hub:
+1. git init 
+2. git add xyz.html 
+3. git commit -m “initial commit”
+4. git push
