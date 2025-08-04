@@ -13,10 +13,13 @@ int main(){
 }
 
 /*
-output
+output:
+
 ptr = 1163918919
 ptr = 1163918920
 ptr = 1163918919
+
+here char is 1 byte - so it is incremented by 1 byte 
 */
 
 //ptr++
