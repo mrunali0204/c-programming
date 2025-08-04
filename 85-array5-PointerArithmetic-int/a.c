@@ -15,9 +15,9 @@ int main(){
 /*
 output:
 
-ptr = 1163918919
-ptr = 1163918920
-ptr = 1163918919
+ptr = 182450004
+ptr = 182450008
+ptr = 182450004
 
 here int is 4 byte - so it is incremented by 4 byte for 1 datatype
 */
