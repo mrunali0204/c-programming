@@ -1,30 +1,33 @@
 @echo off
 setlocal enabledelayedexpansion
 
-REM Loop through all folders in the current directory
-for /d %%F in (*) do (
-    set "name=%%F"
-    
-    REM Extract the numeric prefix
-    for /f "tokens=1,* delims=-" %%A in ("%%F") do (
-        set "num=%%A"
-        set "rest=%%B"
-        
-        REM Only rename if it's a number and less than 1000
+REM Loop through all folders
+for /D %%f in (*) do (
+    set "name=%%f"
+
+    REM Extract the number prefix (before the first dash)
+    for /f "tokens=1* delims=-" %%a in ("%%f") do (
+        set "num=%%a"
+        set "rest=%%b"
+
+        REM Only process if num is a number
         echo !num! | findstr /r "^[0-9][0-9]*$" >nul
         if !errorlevel! == 0 (
-            set /a numval=!num!
-            if !numval! LSS 1000 (
-                set "padded=00!numval!"
-                set "padded=!padded:~-3!"
-
-                set "newname=!padded!-!rest!"
-                if not "!name!"=="!newname!" (
-                    echo Renaming "!name!" to "!newname!"
-                    ren "!name!" "!newname!"
-                )
+            if !num! LSS 10 (
+                set "newnum=00!num!"
+            ) else if !num! LSS 100 (
+                set "newnum=0!num!"
+            ) else (
+                set "newnum=!num!"
+            )
+            set "newname=!newnum!-!rest!"
+            if not "!newname!"=="%%f" (
+                echo Renaming %%f to !newname!
+                ren "%%f" "!newname!"
             )
         )
     )
 )
 
+endlocal
+pause
