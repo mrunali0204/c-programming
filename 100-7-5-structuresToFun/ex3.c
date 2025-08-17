@@ -27,7 +27,7 @@ void printInfo(struct student s1){
     printf("student name = %s \n",s1.name);
 
     //roll value changed here
-    s1.roll = 104; // output -> 101
+    s1.roll = 104; // output -> 107
     printf("%d",s1.roll);
 }
 
