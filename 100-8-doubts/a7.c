@@ -29,4 +29,10 @@ int main(){
     for(int i=0; i<size3; i++){
         printf("new %d\n", arr[i]);
     }
+
+    //arr 
+    char arr1[3] = {'a', 'b', 'v'};
+    int main(){
+        
+    }
 }
