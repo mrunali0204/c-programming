@@ -15,15 +15,24 @@ int main(){
     }
 
     printf("all elements are : ");
-    for(int i=0; i<n; i++){
+    for(int i = 0; i < n; i++){
         printf("%d\n", arr[i]);
     }
     printf("\n");
-
-    for(int i = 0; i<n; i++){
+    
+    int count = 1; // not 0 - seeing current elem is 1
+    for(int i = 0; i < n; i++){
         if(arr[i] == arr[i+1]){
-            int count = count + 1;
-            printf("%d", count);
+            count++;
+
+            //printf("%d occurs %d times \n", arr[i], count ); cant write this here it will print again and again
         }
+        //printf("%d occurs %d times \n", arr[i], count ); cant write this here shows error 
+
+        else{
+            printf("%d occurs %d times \n", arr[i], count ); //write here-  we’ve reached the end of this number’s streak
+            count = 1;
+        }
+        
     }
 }
