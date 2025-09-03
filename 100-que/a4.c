@@ -18,7 +18,7 @@ int main(){
 
         if (count < 0){
             printf("invalid");
-            return 0;
+            return 0;  //If you put return 0; inside the loop, it immediately stops the whole program right there
         }
     }
 
