@@ -2,10 +2,9 @@
 #include <string.h>
 #include <math.h>
 #include <stdlib.h>
-//Complete the following function.
 
 int find_nth_term(int n, int a, int b, int c) {
-  //Write your code here.
+
   
 }
 
