@@ -1,0 +1,6 @@
+mistakes:
+
+1.case '1'   correct way is case 1 
+2. int iNo1;           //calculator.c(15) : error C2143: syntax error : missing ';' before 'type'   -> if declared after using 
+older C compilers require all variable declarations to appear before any statements in a block.
+
