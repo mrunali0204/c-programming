@@ -42,7 +42,7 @@ int main(void)
         printf("6. Square of two values : %d\n", iNo1 * iNo1, iNo2 * iNo2);
         break;
 
-        case 7:     
+        case 7:
         printf("7. SquareRoot of two values : %d\n", sqrt(iNo1), sqrt(iNo2));   //sqrt
         break;
 
@@ -57,5 +57,4 @@ int main(void)
 
 
 int simple_calculator()
-
 
