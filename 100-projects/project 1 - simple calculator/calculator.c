@@ -56,3 +56,6 @@ int main(void)
 }
 
 
+int simple_calculator()
+
+
