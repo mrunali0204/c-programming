@@ -1,6 +1,8 @@
 #include<stdio.h>
 #include<math.h>
 
+int simple_calculator(int iChoose);
+
 int main(void)
 {
 
@@ -17,6 +19,13 @@ int main(void)
     printf("enter the two values : \n");
     scanf("%d%d", &iNo1, &iNo2);
 
+
+    return 0;
+}
+
+
+int simple_calculator(int iChoose)
+{
     switch(iChoose){
         case 1:
         printf("1. Addition of two values : %d\n", iNo1 + iNo2);
@@ -51,11 +60,6 @@ int main(void)
         break;
         
     }
-
-    return 0;
 }
-
-
-int simple_calculator()
 int scientific_calculator()
 
