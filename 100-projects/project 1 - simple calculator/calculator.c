@@ -19,11 +19,10 @@ int main(void)
 
     simple_calculator(iChoose, iNo1, iNo2);
 
-    //scientific_calculator(iChoose, iNo1, iNo2);
+    scientific_calculator(iChoose, iNo1, iNo2);
 
     return 0;
 }
-
 
 int simple_calculator(int iChoose, int iNo1, int iNo2)
 {
@@ -68,74 +67,53 @@ int simple_calculator(int iChoose, int iNo1, int iNo2)
     }
 }
 
-// int scientific_calculator(int iChoose, int iNo1, int iNo2)
-// {
-//     int iSelect;
+int scientific_calculator(int iChoose, int iNo1, int iNo2)
+{
+    int iSelect;
 
-//     switch(iChoose){
-//         case 1:
-//             switch(iSelect){
-//                 printf("1. Trigonometric of values : %d\n", iNo1 , iNo2);
+    switch(iChoose){
+        case 1:
+            switch(iSelect){
+                printf("1. Trigonometric of values : %d\n", iNo1 , iNo2);
 
-//                 case 1:
-//                 printf("1. Trigonometric 2^nd of two values : %d\n", pow(2, iNo1), pow(2, iNo2));
-//                 break;
+                case 1:
+                printf("1. Trigonometric 2^nd of two values : %d\n", pow(2, iNo1), pow(2, iNo2));
+                break;
 
-//                 case 2:
-//                 printf("2. Trigonometric sin of two values : %d\n", sin(iNo1), sin(iNo2));
-//                 break;
+                case 2:
+                printf("2. Trigonometric sin of two values : %d\n", sin(iNo1), sin(iNo2));
+                break;
 
-//                 case 3:
-//                 printf("3. Trigonometric cos of two values : %d\n", cos(iNo1), cos(iNo2));
-//                 break;
-//             }
+                case 3:
+                printf("3. Trigonometric cos of two values : %d\n", cos(iNo1), cos(iNo2));
+                break;
+            }
 
-//         case 2:
-//         switch(iSelect){
-//                 printf("1. Trigonometric of values : %d\n", iNo1 , iNo2);
+        case 2:
+        switch(iSelect){
+                printf("1. Function of values : %d\n", iNo1 , iNo2);
 
-//                 case 1:
-//                 printf("1. Trigonometric 2^nd of two values : %d\n", pow(2, iNo1), pow(2, iNo2));
-//                 break;
+                case 1:
+                printf("1. Function square of two values : %d\n", pow(2, iNo1), pow(2, iNo2));
+                break;
 
-//                 case 2:
-//                 printf("2. Trigonometric sin of two values : %d\n", sin(iNo1), sin(iNo2));
-//                 break;
+                case 2:
+                printf("2. Function sin of two values : %d\n", sin(iNo1), sin(iNo2));
+                break;
 
-//                 case 3:
-//                 printf("3. Trigonometric cos of two values : %d\n", cos(iNo1), cos(iNo2));
-//                 break;
+                case 3:
+                printf("3. Function cos of two values : %d\n", cos(iNo1), cos(iNo2));
+                break;
 
-//                 default:
-//                 printf("Invalid");
-//                 break;
-//             }
+                default:
+                printf("Invalid");
+                break;
+            }
         
-//         case 3:
-//         switch(iSelect){
-//                 printf("1. Trigonometric of values : %d\n", iNo1 , iNo2);
-
-//                 case 1:
-//                 printf("1. Trigonometric 2^nd of two values : %d\n", pow(2, iNo1), pow(2, iNo2));
-//                 break;
-
-//                 case 2:
-//                 printf("2. Trigonometric sin of two values : %d\n", sin(iNo1), sin(iNo2));
-//                 break;
-
-//                 case 3:
-//                 printf("3. Trigonometric cos of two values : %d\n", cos(iNo1), cos(iNo2));
-//                 break;
-
-//                 default:
-//                 printf("Invalid");
-//                 break;
-//             }
+        default:
+        printf("Invalid");
+        break;
         
-//         default:
-//         printf("Invalid");
-//         break;
-        
-//     }
-// }
+    }
+}
 
