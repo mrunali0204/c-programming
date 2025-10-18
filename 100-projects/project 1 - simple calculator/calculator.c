@@ -57,4 +57,5 @@ int main(void)
 
 
 int simple_calculator()
+int scientific_calculator()
 
