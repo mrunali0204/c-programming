@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<math.h>
 
-int simple_calculator(int iChoose);
+int simple_calculator(int iChoose, int iNo1, int iNo2);
 
 int main(void)
 {
@@ -11,20 +11,22 @@ int main(void)
     int iNo2;
 
     printf("choose one from the following : \n");
-    printf("1. Addition\n 2. Substraction\n 3. Multiplication\n 4. Division\n 5. Modulus\n 6. Square\n 7. SquareRoot \n");
+    printf(" 1. Addition\n 2. Substraction\n 3. Multiplication\n 4. Division\n 5. Modulus\n 6. Square\n 7. SquareRoot \n");
     scanf("%d", &iChoose);
 
     //int iNo1;           //calculator.c(15) : error C2143: syntax error : missing ';' before 'type'
     //int iNo2;          //calculator.c(16) : error C2143: syntax error : missing ';' before 'type'
+
     printf("enter the two values : \n");
     scanf("%d%d", &iNo1, &iNo2);
 
+    simple_calculator(iChoose, iNo1, iNo2);
 
     return 0;
 }
 
 
-int simple_calculator(int iChoose)
+int simple_calculator(int iChoose, int iNo1, int iNo2)
 {
     switch(iChoose){
         case 1:
@@ -61,5 +63,5 @@ int simple_calculator(int iChoose)
         
     }
 }
-int scientific_calculator()
+
 
