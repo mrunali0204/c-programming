@@ -109,6 +109,10 @@ int scientific_calculator(int iChoose, int iNo1, int iNo2)
                 break;
             }
         
+        default:
+        printf("Invalid");
+        break;
+        
     }
 }
 
