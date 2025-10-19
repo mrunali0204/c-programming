@@ -62,7 +62,6 @@ int simple_calculator(int iChoose, int iNo1, int iNo2)
         default:
         printf("Invalid");
         break;
-        
         return iChoose;
     }
 }
@@ -109,10 +108,6 @@ int scientific_calculator(int iChoose, int iNo1, int iNo2)
                 printf("Invalid");
                 break;
             }
-        
-        default:
-        printf("Invalid");
-        break;
         
     }
 }
