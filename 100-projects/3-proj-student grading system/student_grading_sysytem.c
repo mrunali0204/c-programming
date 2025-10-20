@@ -17,17 +17,18 @@ int main(void)
     }
 
     printf("%d", marks[]);
-    // if(marks > 100)
-    // {
-    //     printf("Number is too High\n");
-    // }
-    // else if(marks < 100)
-    // {
-    //     printf("Number is too Low\n");
-    // }
-    // else{
-    //     printf("Invalid");
-    // }
+    if(marks > 100)
+    {
+        printf("Number is too High\n");
+    }
+    else if(marks < 100)
+    {
+        printf("Number is too Low\n");
+    }
+    else
+    {
+        printf("Invalid");
+    }
 
     return 0;
 }
