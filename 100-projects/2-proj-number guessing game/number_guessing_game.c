@@ -17,4 +17,6 @@ int main(void)
     else{
         printf("Invalid");
     }
+
+    return 0;
 }
