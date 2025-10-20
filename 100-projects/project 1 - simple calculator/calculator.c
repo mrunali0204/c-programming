@@ -11,7 +11,7 @@ int main(void)
     int iNo1;            //declare here bcoz old compiler gives error
     int iNo2;
 
-    //int iNo1;           //calculator.c(15) : error C2143: syntax error : missing ';' before 'type'
+    //int iNo1;          //calculator.c(15) : error C2143: syntax error : missing ';' before 'type'
     //int iNo2;          //calculator.c(16) : error C2143: syntax error : missing ';' before 'type'
 
     printf("enter the two values : \n");
