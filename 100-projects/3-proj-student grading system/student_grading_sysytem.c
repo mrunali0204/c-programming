@@ -25,6 +25,10 @@ int main(void)
     {
         printf("Number is too Low\n");
     }
+    else if
+    {
+        printf("Invalid");
+    }
     else
     {
         printf("Invalid");
